@@ -2,18 +2,18 @@
 
 #Para alterar um elemento, use o nome da lista seguido do índice do elemento que você quer modificar e, então, forneça o novo valor que você quer que esse item tenha. Exemplo: 
 
-motocycles = ['honda', 'yamaha', 'suzuki']
-print(motocycles)
+motorcycles= ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
 
 print('\nAlterando o índice [0] da lista:')
-motocycles[0] = 'ducati'
-print(motocycles)
+motorcycles[0] = 'ducati'
+print(motorcycles)
 
 #Quando concatenamos um item em uma lista, o novo elemento é inserido ao final. Exemplo: 
 
 print('\nConcatenando elementos no final de uma lista:')
-motocycles.append('honda')
-print(motocycles)
+motorcycles.append('honda')
+print(motorcycles)
 
 print('\nIniciando uma lista vazia e acrescentando itens:')
 cars = []
@@ -49,13 +49,39 @@ cars = ['fiat', 'ford', 'nissan']
 print(cars)
 
 print('\nRemovendo um elemento da lista utilizando o método pop()')
-popped_cars = cars.pop()
+popped_cars = cars.pop() #Armazenando o elemento na variável
 print(cars)
 
 print('\nUtilizando o item após a remoção. O item removido:')
-print(popped_cars)
+print(popped_cars) #Exibindo o elemento removido
 
+#Você pode usar pop() para remover um item de qualquer posição em uma lista se incluir o índice do item que você deseja remover entre parênteses.
 
+#Se você não tiver certeza se deve usar a instrução del ou o método pop(), eis um modo fácil de decidir: quando quiser apagar um item de uma lista e esse item não vai ser usado de modo algum, utilize a instrução del; se quiser usar um item à medida que removê-lo, utilize o método pop()
+
+#Removendo um item de acordo com o valor
+
+print('\nNova lista:')
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+print('\nRemovendo um item utilizando o método remove(), utilizado quando conhecemos o valor do item que desejamos remover.')
+motorcycles.remove('ducati')
+print(motorcycles)
+
+#Também podemos utilizar o método remove() para trabalhar com um valor que está sendo removido da lista. 
+
+print('\nNova lista:')
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+too_expensive = 'honda'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+
+print('\nO valor "honda" foi armazenado em uma variável e utilizado na frase abaixo, além disso, foi retirado da lista:')
+print('A moto ' + too_expensive.title() + ' é muito cara para mim!')
+print(motorcycles)
 
 
 

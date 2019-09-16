@@ -1,6 +1,6 @@
 #Faça uma cópia da lista de pizzas e chame-a de friend_pizzas.
 
-pizzas = ['marguerita', 'frango com catupiry', 'peperoni' ]
+pizzas = ['marguerita', 'frango', 'peperoni' ]
 
 friend_pizzas = pizzas[:]
 
@@ -29,4 +29,6 @@ for pizza in pizzas:
 print('\nAs pizzas favoritas do meu amigo são: ')
 for friend in friend_pizzas:
   print(friend.title())
+
+
 
